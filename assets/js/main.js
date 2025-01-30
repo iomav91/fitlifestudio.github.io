@@ -1,20 +1,23 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+    // Menu toggle
+    const menuButton = document.querySelector('#menu-button');
+    const menu = document.querySelector('#menu');
+    
+    menuButton?.addEventListener('click', () => {
+        menu?.classList.toggle('hidden');
     });
 
-    // Close menu when clicking links
-    const mobileLinks = mobileMenu.querySelectorAll('a');
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.querySelector(anchor.getAttribute('href'));
+            target?.scrollIntoView({ behavior: 'smooth' });
         });
     });
+    
 
     // First verify elements exist
     const slideshowContainer = document.querySelector('.slideshow-container');
