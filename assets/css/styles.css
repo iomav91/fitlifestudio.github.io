@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Optimize CSS with better practices */
 /* Use CSS custom properties for consistent theming */
 :root {
