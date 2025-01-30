@@ -1,5 +1,11 @@
 {
+  "name": "fitlifestudio",
+  "version": "1.0.0",
+  "description": "",
   "scripts": {
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
   }
 }
