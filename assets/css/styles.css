@@ -1,0 +1,122 @@
+/* Optimize CSS with better practices */
+/* Use CSS custom properties for consistent theming */
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --text-color: #1f2937;
+    --light-bg: #f3f4f6;
+}
+
+/* Implement progressive enhancement */
+@supports (display: grid) {
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/* Προκαθορισμένα μεγέθη για δυναμικό περιεχόμενο */
+.hero-image {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+}
+
+/* Optimize images with blur-up technique */
+.lazy-image {
+    filter: blur(10px);
+    transition: filter 0.3s;
+}
+
+.lazy-image.loaded {
+    filter: blur(0);
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 20;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+    background: white;
+}
+
+/* Feature Card Hover Effects */
+.feature-card {
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Container Hover Effect */
+.feature-icon {
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    background-color: #2563eb; /* blue-600 */
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Schedule Styling */
+.schedule-tab {
+    background-color: #f3f4f6;
+    transition: all 0.3s ease;
+}
+
+.schedule-tab.active {
+    background-color: #2563eb;
+    color: white;
+}
+
+.schedule-content {
+    display: none;
+}
+
+.schedule-content.active {
+    display: block;
+}
+
+.class-card {
+    transition: all 0.3s ease;
+}
+
+.class-card:hover {
+    transform: translateY(-2px);
+}
