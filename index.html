@@ -43,7 +43,15 @@
     <!-- Custom CSS -->
     <link href="dist/output.css" rel="stylesheet" integrity="sha384-aXWnHeVij5GX1TN8Oeng4UvU1wDucywwjos9Iz042+Pjnf/AQQtulF4fO2v1j2Bs" crossorigin="anonymous">
     <link href="assets/css/styles.css" rel="stylesheet" integrity="sha384-Gye+36fYGZbm0gCb+ce+sZXqo3so0afNiGJOFAiNULKUuVcLtV93mWJ/YkAX53vb" crossorigin="anonymous">
-    
+    /* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
 </head>
 <body class="bg-gray-50">
     <!-- Header -->
@@ -142,14 +150,14 @@
             <!-- Content -->
             <div class="container mx-auto px-4 relative z-20">
                 <div class="max-w-2xl text-white">
-                    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
                         Ξεκίνα το Fitness Journey σου Σήμερα
                     </h1>
-                    <p class="text-xl md:text-2xl mb-8 text-gray-200">
+                    <p class="text-xl md:text-2xl mb-8 text-gray-200 animate-fade-in-delay">
                         Προσωπική καθοδήγηση, σύγχρονος εξοπλισμός, εγγυημένα αποτελέσματα
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition">
+                    <div class="flex flex-col sm:flex-row gap-4 animate-fade-delay-2">
+                        <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rsounded-full text-lg font-semibold hover:bg-blue-700 transition">
                             Κλείσε Δωρεάν Δοκιμαστικό
                             <span class="ml-2">→</span>
                         </a>
