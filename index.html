@@ -7,8 +7,15 @@
     <meta name="keywords" content="γυμναστήριο, fitness, Καλλιθέα, personal training, crossfit">
     <title>FitLife Studio - Landing Page</title>
     
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.google.com https://maps.googleapis.com https://www.gstatic.com https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline' https://cdn.tailwindcss.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://region1.google-analytics.com https://*.g.doubleclick.net https://*.google.com https://*.googleapis.com; img-src 'self' https://*.google-analytics.com https://*.googletagmanager.com https://www.google.com https://www.google.gr data: blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src 'self' https://www.google.com">
-
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self'; 
+        script-src 'self' https://www.google.com https://maps.googleapis.com https://www.gstatic.com 'unsafe-inline' https://cdn.tailwindcss.com; 
+        style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://fonts.googleapis.com; 
+        font-src 'self' https://fonts.gstatic.com data: https://fonts.googleapis.com;
+        img-src 'self' https://*.google.com https://*.googleapis.com https://*.gstatic.com https://images.unsplash.com https://*.unsplash.com;
+        frame-src 'self' https://www.google.com https://*.google.com https://www.openstreetmap.org;
+        connect-src 'self' https://*.google.com https://*.googleapis.com">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000">
@@ -36,25 +43,9 @@
     <!-- Custom CSS -->
     <link href="dist/output.css" rel="stylesheet" integrity="sha384-yJFUp4qx1YhN5rs95DBywtcIDYeLDLJNtWZe0TE0922Sa6YkFWjTwTmzrVYVYt1b" crossorigin="anonymous">
     <link href="assets/css/styles.css" rel="stylesheet" integrity="sha384-Gye+36fYGZbm0gCb+ce+sZXqo3so0afNiGJOFAiNULKUuVcLtV93mWJ/YkAX53vb" crossorigin="anonymous">
-    <!-- Add this in the <head> section -->
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
+    
 </head>
 <body class="bg-gray-50">
-    <!-- Add immediately after <body> tag -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
-            height="0" width="0" style="display:none;visibility:hidden">
-        </iframe>
-    </noscript>
-
     <!-- Header -->
     <header class="fixed w-full bg-white shadow-md z-50">
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -543,9 +534,6 @@
     </button>
     
     <!-- Custom JS -->
-    <script src="assets/js/analytics.js"></script>
-    <script src="assets/js/performance.js"></script>
-    <script src="assets/js/user-behavior.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
