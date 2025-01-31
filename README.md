@@ -1,27 +1,40 @@
-# FitLife Studio
+# FitLife Studio 🏋️‍♂️
 
-A modern, high-performance gym website built with HTML5, TailwindCSS, and JavaScript. Features a responsive design optimized for all devices with perfect Core Web Vitals scores.
+Modern landing page for a new fitness studio in Kallithea, Athens. Built with HTML5, Tailwind CSS and vanilla JavaScript.
 
-## Key Features
-- Responsive Design
-- Performance Optimized (LCP: 0.19s, INP: 29ms, CLS: 0)
-- Accessibility Score: 22/22
-- SEO Optimized
-- Interactive Class Schedule
-- Membership Plans
-- Contact Form
-- Location Map Integration
+## 🎯 Features
 
-## Tech Stack
+- Responsive hero section with engaging CTA
+- Interactive class schedule viewer  
+- Dynamic pricing tables
+- Lead generation form
+- Location map integration
+- Mobile-first design
+
+## ⚡ Tech Stack
+
 - HTML5
-- TailwindCSS
+- Tailwind CSS
 - JavaScript
-- Google Maps API
+- GitHub Pages
 
-## Performance Metrics
-- Best Practices: 5/5
-- SEO Score: 5/6
-- Accessibility: 100%
-- Mobile-First Design
+## 🚀 Performance
 
-Live Demo: https://yourusername.github.io/FitLife
+- Performance: 100/100
+- Accessibility: 100/100  
+- Best Practices: 100/100
+- SEO: 100/100
+
+## 📦 Installation
+
+```bash
+# Clone repository
+git clone https://github.com/iomav91/fitlife-studio
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+Live Demo: https://iomav91.github.io/fitlifestudio.github.io
