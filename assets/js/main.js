@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     //trackTimeOnPage();
     
     // Menu toggle
-    const menuButton = document.querySelector('#menu-button');
-    const menu = document.querySelector('#menu');
+    const menuButton = document.querySelector('#mobile-menu-button');
+    const menu = document.querySelector('#mobile-menu');
     
     menuButton?.addEventListener('click', () => {
         menu?.classList.toggle('hidden');
