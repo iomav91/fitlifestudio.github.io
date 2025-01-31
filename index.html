@@ -29,20 +29,22 @@
     <!-- Custom CSS -->
     <link href="dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-    </script>
+    <!-- Initialize the map function -->
+<script>
+    let map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: 37.983810, lng: 23.727539 },
+            zoom: 15,
+        });
+    }
+    window.initMap = initMap;
+</script>
 
-    <script>
-        function initMap() {
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 15,
-                center: { lat: YOUR_LAT, lng: YOUR_LNG },
-            });
-        }
-
-        window.initMap = initMap;
-    </script>
+<!-- Load Google Maps with async and callback -->
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
 
     <!-- Optimize reCAPTCHA loading -->
     <script defer
