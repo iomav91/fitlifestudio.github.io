@@ -43,9 +43,25 @@
     <!-- Custom CSS -->
     <link href="dist/output.css" rel="stylesheet" integrity="sha384-yJFUp4qx1YhN5rs95DBywtcIDYeLDLJNtWZe0TE0922Sa6YkFWjTwTmzrVYVYt1b" crossorigin="anonymous">
     <link href="assets/css/styles.css" rel="stylesheet" integrity="sha384-Gye+36fYGZbm0gCb+ce+sZXqo3so0afNiGJOFAiNULKUuVcLtV93mWJ/YkAX53vb" crossorigin="anonymous">
-    
+    <!-- Add this in the <head> section -->
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body class="bg-gray-50">
+    <!-- Add immediately after <body> tag -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
+            height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+
     <!-- Header -->
     <header class="fixed w-full bg-white shadow-md z-50">
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
