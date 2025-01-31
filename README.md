@@ -29,7 +29,7 @@ Modern landing page for a new fitness studio in Kallithea, Athens. Built with HT
 
 ```bash
 # Clone repository
-git clone https://github.com/iomav91/fitlife-studio
+git clone https://github.com/iomav91/fitlifestudio.github.io
 
 # Install dependencies
 npm install
