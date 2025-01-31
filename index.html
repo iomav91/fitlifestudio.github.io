@@ -20,13 +20,17 @@
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000">
     <meta http-equiv="Permissions-Policy" content="
-    geolocation=(),
-    camera=(),
-    microphone=(),
-    payment=(),
-    usb=(),
-    fullscreen=(self),
-    display-capture=()">
+        geolocation=(),
+        camera=(),
+        microphone=(),
+        payment=(),
+        usb=(),
+        fullscreen=(self),
+        display-capture=()">
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <meta http-equiv="Content-Security-Policy-Report-Only" content="report-uri https://your-reporting-endpoint.com/csp-reports">
+
 
     
     <!-- Preload critical assets -->
