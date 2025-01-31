@@ -1,10 +1,10 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    trackPageLoadTime();
-    trackFID();
-    trackScrollDepth();
-    trackTimeOnPage();
+    //trackPageLoadTime();
+    //trackFID();
+    //trackScrollDepth();
+    //trackTimeOnPage();
     
     // Menu toggle
     const menuButton = document.querySelector('#menu-button');
