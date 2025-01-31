@@ -43,8 +43,7 @@
     <!-- Custom CSS -->
     <link href="dist/output.css" rel="stylesheet" integrity="sha384-aXWnHeVij5GX1TN8Oeng4UvU1wDucywwjos9Iz042+Pjnf/AQQtulF4fO2v1j2Bs" crossorigin="anonymous">
     <link href="assets/css/styles.css" rel="stylesheet" integrity="sha384-Gye+36fYGZbm0gCb+ce+sZXqo3so0afNiGJOFAiNULKUuVcLtV93mWJ/YkAX53vb" crossorigin="anonymous">
-    <style>
-        /* Animations */
+    /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -53,19 +52,6 @@
 .animate-fade-in {
     animation: fadeIn 0.6s ease-out forwards;
 }
-        .animate-fade-in-delay {
-    animation: fadeIn 0.6s ease-out forwards;
-    animation-delay: 0.3s;
-    opacity: 0;
-}
-
-.animate-fade-in-delay-2 {
-    animation: fadeIn 0.6s ease-out forwards;
-    animation-delay: 0.6s;
-    opacity: 0;
-}
-    </style>
-    
 </head>
 <body class="bg-gray-50">
     <!-- Header -->
@@ -114,22 +100,22 @@
                 <div class="slideshow-container h-full">
                     <picture>
                         <source 
-                            srcset="assets/hero-img-1.jpg 300w,
-                            assets/hero-img-1.jpg 600w,
-                            assets/hero-img-1.jpg 900w"
+                            srcset="https://images.unsplash.com/photo-1534438327276-14e5300c3a48 300w,
+                            https://images.unsplash.com/photo-1534438327276-14e5300c3a48 600w,
+                            https://images.unsplash.com/photo-1534438327276-14e5300c3a48 900w"
                             type="image/webp"
                         >
-                        <img src="assets/hero-img-1.jpg" data-src="assets/hero-img-1.jpg" sizes="(max-width: 600px) 300px, (max-width: 900px) 600px, 900px" data-src="assets/hero-img-1.jpg" decoding="async" class="slide lazy-image loaded active hero-image" alt="Modern Gym" width="900" height="600">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" data-src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" decoding="async" class="slide lazy-image loaded active hero-image" alt="Modern Gym" width="900" height="600">
                     </picture>
                     
                     <picture>
                         <source 
-                            srcset="assets/hero-img-2.jpg 300w,
-                            assets/hero-img-2.jpg 600w,
-                            assets/hero-img-2.jpg 900w"
+                            srcset="https://images.unsplash.com/photo-1576678927484-cc907957088c 300w,
+                            https://images.unsplash.com/photo-1576678927484-cc907957088c 600w,
+                            https://images.unsplash.com/photo-1576678927484-cc907957088c 900w"
                             type="image/webp"
                         >
-                        <img src="assets/hero-img-2.jpg" data-src="assets/hero-img-2.jpg" sizes="(max-width: 600px) 300px, (max-width: 900px) 600px, 900px" data-src="assets/hero-img-2.jpg" decoding="async" class="slide lazy-image loaded hero-image" alt="Training Session" width="900" height="600">
+                        <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c" sizes="(max-width: 600px) 300px, (max-width: 900px) 600px, 900px" data-src="https://images.unsplash.com/photo-1576678927484-cc907957088c" decoding="async" class="slide lazy-image loaded hero-image" alt="Training Session" width="900" height="600">
                     </picture>
                     <picture>
                         <source 
@@ -171,7 +157,7 @@
                         Προσωπική καθοδήγηση, σύγχρονος εξοπλισμός, εγγυημένα αποτελέσματα
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 animate-fade-delay-2">
-                        <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition">
+                        <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rsounded-full text-lg font-semibold hover:bg-blue-700 transition">
                             Κλείσε Δωρεάν Δοκιμαστικό
                             <span class="ml-2">→</span>
                         </a>
