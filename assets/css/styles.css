@@ -96,7 +96,7 @@
 }
 
 .feature-card:hover .feature-icon svg {
-    @apply bg-white;
+    background-color: white;
 }
 
 /* Schedule Styling */
