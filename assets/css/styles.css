@@ -95,6 +95,10 @@
     transform: scale(1.1);
 }
 
+.feature-card:hover .feature-icon svg {
+    @apply bg-white;
+}
+
 /* Schedule Styling */
 .schedule-tab {
     background-color: #f3f4f6;
